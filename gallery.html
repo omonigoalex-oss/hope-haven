@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Hope Haven Children's Home</title>
+
+    <meta name="description"
+        content="Explore moments from Hope Haven Children's Home activities, education, sports and community events.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= LOADER ================= -->
+
+<div class="loader" id="loader">
+
+    <div class="loader-spinner"></div>
+
+    <p>
+        Loading Hope Haven...
+    </p>
+
+</div>
+
+
+<!-- ================= HEADER ================= -->
+
+<header class="site-header">
+
+    <div class="container nav-wrapper">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-hands-holding-child"></i>
+            </span>
+
+            <span>
+                <strong>Hope Haven</strong>
+                <small>Children's Home</small>
+            </span>
+
+        </a>
+
+
+        <nav class="main-nav" id="mainNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="programs.html">Programs</a>
+
+            <a href="children.html">
+                Our Children
+            </a>
+
+            <a href="gallery.html" class="active">
+                Gallery
+            </a>
+
+            <a href="donate.html">
+                Donate
+            </a>
+
+            <a href="volunteer.html">
+                Volunteer
+            </a>
+
+            <a href="contact.html">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <button
+                class="icon-btn"
+                id="themeToggle"
+                aria-label="Toggle dark mode">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <button
+                class="icon-btn"
+                id="searchToggle"
+                aria-label="Search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+
+            <button
+                class="menu-btn"
+                id="menuBtn"
+                aria-label="Open menu">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= SEARCH ================= -->
+
+<div class="search-overlay" id="searchOverlay">
+
+    <div class="search-box">
+
+        <button
+            class="close-search"
+            id="closeSearch">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+        <h2>
+            Search Hope Haven
+        </h2>
+
+        <p>
+            Search our website for programs,
+            volunteering opportunities and more.
+        </p>
+
+        <div class="search-input-wrapper">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="search"
+                id="siteSearch"
+                placeholder="Search here...">
+
+        </div>
+
+        <div
+            class="search-results"
+            id="searchResults">
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= PAGE HERO ================= -->
+
+<section class="page-hero">
+
+    <div class="container">
+
+        <span class="eyebrow">
+
+            <i class="fa-solid fa-images"></i>
+
+            Our Gallery
+
+        </span>
+
+
+        <h1>
+
+            Moments That
+            <span>Tell Our Story.</span>
+
+        </h1>
+
+
+        <p>
+
+            Explore selected moments representing
+            learning, creativity, recreation and
+            community at Hope Haven.
+
+        </p>
+
+
+        <div class="breadcrumb">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span>
+                Gallery
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GALLERY ================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-heading centered reveal">
+
+            <span class="section-label">
+                Life at Hope Haven
+            </span>
+
+            <h2>
+                A Collection of
+                <span>Meaningful Moments</span>
+            </h2>
+
+            <p>
+                These images are used as visual
+                placeholders for this academic project.
+            </p>
+
+        </div>
+
+
+        <!-- FILTER BUTTONS -->
+
+        <div class="gallery-filters reveal">
+
+            <button
+                class="gallery-filter active"
+                data-filter="all">
+
+                All
+
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="education">
+
+                Education
+
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="activities">
+
+                Activities
+
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="community">
+
+                Community
+
+            </button>
+
+            <button
+                class="gallery-filter"
+                data-filter="sports">
+
+                Sports
+
+            </button>
+
+        </div>
+
+
+        <!-- GALLERY GRID -->
+
+        <div class="gallery-grid">
+
+
+            <!-- IMAGE 1 -->
+
+            <article
+                class="gallery-item gallery-large reveal"
+                data-category="education">
+
+                <img
+                    src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=85"
+                    alt="Students learning in a classroom"
+                    loading="lazy">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>
+                            Education
+                        </span>
+
+                        <h3>
+                            Learning Together
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="gallery-view"
+                        aria-label="View image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 2 -->
+
+            <article
+                class="gallery-item reveal"
+                data-category="activities">
+
+                <img
+                    src="https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=900&q=85"
+                    alt="Children participating in an activity"
+                    loading="lazy">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>
+                            Activities
+                        </span>
+
+                        <h3>
+                            Creative Time
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="gallery-view"
+                        aria-label="View image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 3 -->
+
+            <article
+                class="gallery-item reveal"
+                data-category="community">
+
+                <img
+                    src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=900&q=85"
+                    alt="Children together outdoors"
+                    loading="lazy">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>
+                            Community
+                        </span>
+
+                        <h3>
+                            Growing Together
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="gallery-view"
+                        aria-label="View image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 4 -->
+
+            <article
+                class="gallery-item reveal"
+                data-category="sports">
+
+                <img
+                    src="https://images.unsplash.com/photo-1473976345543-9ffc928e648d?auto=format&fit=crop&w=900&q=85"
+                    alt="Young people playing football"
+                    loading="lazy">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>
+                            Sports
+                        </span>
+
+                        <h3>
+                            Teamwork & Play
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="gallery-view"
+                        aria-label="View image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 5 -->
+
+            <article
+                class="gallery-item gallery-tall reveal"
+                data-category="activities">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=85"
+                    alt="Young children during an activity"
+                    loading="lazy">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>
+                            Activities
+                        </span>
+
+                        <h3>
+                            Discovering Creativity
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="gallery-view"
+                        aria-label="View image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 6 -->
+
+            <article
+                class="gallery-item reveal"
+                data-category="education">
+
+                <img
+                    src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=85"
+                    alt="Students studying together"
+                    loading="lazy">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>
+                            Education
+                        </span>
+
+                        <h3>
+                            Building Knowledge
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="gallery-view"
+                        aria-label="View image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 7 -->
+
+            <article
+                class="gallery-item reveal"
+                data-category="community">
+
+                <img
+                    src="https://images.unsplash.com/photo-1504159506876-f8338247a14a?auto=format&fit=crop&w=900&q=85"
+                    alt="Community gathering"
+                    loading="lazy">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>
+                            Community
+                        </span>
+
+                        <h3>
+                            Community Support
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="gallery-view"
+                        aria-label="View image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+            <!-- IMAGE 8 -->
+
+            <article
+                class="gallery-item gallery-wide reveal"
+                data-category="sports">
+
+                <img
+                    src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=1200&q=85"
+                    alt="Children participating in sports"
+                    loading="lazy">
+
+                <div class="gallery-overlay">
+
+                    <div>
+
+                        <span>
+                            Sports
+                        </span>
+
+                        <h3>
+                            Active & Healthy
+                        </h3>
+
+                    </div>
+
+                    <button
+                        class="gallery-view"
+                        aria-label="View image">
+
+                        <i class="fa-solid fa-expand"></i>
+
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRIVACY ================= -->
+
+<section class="section section-soft">
+
+    <div class="container">
+
+        <div class="gallery-note reveal">
+
+            <div class="gallery-note-icon">
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+            </div>
+
+            <div>
+
+                <h3>
+                    Respecting Children's Privacy
+                </h3>
+
+                <p>
+                    A real children's home should only
+                    publish photographs with appropriate
+                    consent and safeguarding procedures.
+                    This academic project uses general
+                    stock imagery as placeholders.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container cta-content reveal">
+
+        <div>
+
+            <span class="section-label">
+                Get Involved
+            </span>
+
+            <h2>
+                Become Part of the Story.
+            </h2>
+
+            <p>
+                Support our programs and help create
+                more meaningful moments for children.
+            </p>
+
+        </div>
+
+
+        <div class="cta-buttons">
+
+            <a
+                href="donate.html"
+                class="btn btn-primary">
+
+                <i class="fa-solid fa-heart"></i>
+
+                Donate
+
+            </a>
+
+
+            <a
+                href="volunteer.html"
+                class="btn btn-outline">
+
+                Volunteer
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="site-footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-about">
+
+            <a href="index.html" class="logo footer-logo">
+
+                <span class="logo-icon">
+                    <i class="fa-solid fa-hands-holding-child"></i>
+                </span>
+
+                <span>
+
+                    <strong>
+                        Hope Haven
+                    </strong>
+
+                    <small>
+                        Children's Home
+                    </small>
+
+                </span>
+
+            </a>
+
+
+            <p>
+                Giving every child a reason to hope,
+                learn, grow and dream.
+            </p>
+
+
+            <div class="social-links">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="https://www.instagram.com/omon_ighoalex?igsi=cWV3anh3MG9uNmE=" target="_blank" rel="noopener" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Programs</a>
+            <a href="gallery.html">Gallery</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Get Involved
+            </h3>
+
+            <a href="donate.html">Donate</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="children.html">Our Children</a>
+            <a href="contact.html">Contact Us</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h3>
+                Contact
+            </h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Asaba, Delta State
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                09138064792
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                omonigoalex@gmail.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="container">
+
+            <p>
+                © <span id="currentYear"></span>
+                Hope Haven Children's Home.
+                Academic Project Demo.
+            </p>
+
+            <div>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= LIGHTBOX ================= -->
+
+<div class="gallery-lightbox" id="galleryLightbox">
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose"
+        aria-label="Close image">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+
+    <button
+        class="lightbox-prev"
+        id="lightboxPrev"
+        aria-label="Previous image">
+
+        <i class="fa-solid fa-chevron-left"></i>
+
+    </button>
+
+
+    <div class="lightbox-content">
+
+        <img
+            id="lightboxImage"
+            src=""
+            alt="Gallery image">
+
+        <div class="lightbox-caption">
+
+            <span id="lightboxCategory">
+                Category
+            </span>
+
+            <h3 id="lightboxTitle">
+                Gallery Image
+            </h3>
+
+        </div>
+
+    </div>
+
+
+    <button
+        class="lightbox-next"
+        id="lightboxNext"
+        aria-label="Next image">
+
+        <i class="fa-solid fa-chevron-right"></i>
+
+    </button>
+
+</div>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast">
+
+    <div class="toast-icon">
+
+        <i class="fa-solid fa-check"></i>
+
+    </div>
+
+    <div>
+
+        <strong id="toastTitle">
+            Success
+        </strong>
+
+        <p id="toastMessage">
+            Action completed successfully.
+        </p>
+
+    </div>
+
+    <button id="closeToast">
+
+        <i class="fa-solid fa-xmark"></i>
+
+    </button>
+
+</div>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button
+    class="back-top"
+    id="backTop"
+    aria-label="Back to top">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
